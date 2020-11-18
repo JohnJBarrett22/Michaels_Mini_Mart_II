@@ -198,7 +198,7 @@
 
 ._2_block {
   width: 50%;
-  padding: 10px;
+  padding: 25px;
   text-align: left;
 }
 
@@ -208,6 +208,7 @@
 
 .original_logo {
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .red_link {
@@ -295,7 +296,7 @@
 }
 
 .mmm_paragraph {
-  margin-bottom: 10px;
+  margin: 0px;
   font-size: 18px;
 }
 
@@ -474,7 +475,7 @@
 
 .mmm_red_h1_top {
   margin-top: 50px;
-  margin-bottom: 5px;
+  margin-bottom: 50px;
   padding-bottom: 0px;
   color: #f2010e;
   text-align: center;
@@ -507,8 +508,9 @@
 }
 
 .image-4 {
-  margin-top: 7px;
-  margin-bottom: 7px;
+  max-width: 95%;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-left: 25px;
 }
 
@@ -656,17 +658,44 @@
   margin-bottom: 0px;
 }
 
-@media (max-width: 991px) {
+@media screen and (min-width: 1920px) {
+  .about {
+    max-width: 1200px;
+  }
+
+  .mmm_paragraph {
+    margin-bottom: 15px;
+  }
+
+  .mmm_red_h1_top {
+    margin-top: 75px;
+    font-family: Vollkorn, serif;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .main_container {
+    width: 90%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 991px) {
   ._2_block_grid {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
+
   ._2_block {
     display: block;
   }
+
   .mmm_paragraph {
     font-size: 15px;
   }
+
   ._4_block_row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -681,16 +710,19 @@
   src: url('../fonts/fa-solid-900.woff2') format('woff2'), url('../fonts/fa-solid-900.eot') format('embedded-opentype'), url('../fonts/fa-solid-900.woff') format('woff'), url('../fonts/fa-solid-900.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  font-display: auto;
 }
 @font-face {
   font-family: 'Fa brands 400';
   src: url('../fonts/fa-brands-400.woff2') format('woff2'), url('../fonts/fa-brands-400.eot') format('embedded-opentype'), url('../fonts/fa-brands-400.woff') format('woff'), url('../fonts/fa-brands-400.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  font-display: auto;
 }
 @font-face {
   font-family: 'Fa 400';
   src: url('../fonts/fa-regular-400.woff2') format('woff2'), url('../fonts/fa-regular-400.eot') format('embedded-opentype'), url('../fonts/fa-regular-400.woff') format('woff'), url('../fonts/fa-regular-400.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  font-display: auto;
 }
